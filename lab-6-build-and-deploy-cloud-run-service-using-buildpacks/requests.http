@@ -1,10 +1,10 @@
-@PROJECT_HASH = tbzuopynwq
+@PROJECT_HASH = 527057980290
 
 
 ###
 
 curl --request GET \
-  --url https://lab-06-get-customers-svc-{{PROJECT_HASH}}-uc.a.run.app/getcustomers \
+  --url https://lab-06-get-customers-svc-{{PROJECT_HASH}}.us-central1.run.app/getcustomers \
   --header 'content-type: application/json' \
   --header 'user-agent: vscode-restclient'
 
