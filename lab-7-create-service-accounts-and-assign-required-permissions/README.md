@@ -30,6 +30,8 @@ Roles:
     Artifact Registry Writer
     Cloud Run Admin
     Service Account User
+    Cloud Build Logging Service Agent
+    Private Logs Viewer
 
     Not Required unless using Cloud Source Repositories:
     Source Repository Reader
