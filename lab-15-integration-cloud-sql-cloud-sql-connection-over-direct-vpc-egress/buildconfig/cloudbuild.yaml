@@ -3,12 +3,12 @@ steps:
   name: 'gcr.io/cloud-builders/docker:latest'
   dir: 'lab-15-integration-cloud-sql-cloud-sql-connection-over-direct-vpc-egress/microservices/customers'
   args: ['build', 
-          '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-monkey-artifact-registry/lab-15-get-customers-svc-img',
+          '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-run-poc-artifact-registry/lab-15-get-customers-svc-img',
           '.']
 
 - id: "Push Docker Image To Artifact Registry"
   name: 'gcr.io/cloud-builders/docker:latest'
-  args: ['push', '--all-tags', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-monkey-artifact-registry/lab-15-get-customers-svc-img']
+  args: ['push', '--all-tags', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-run-poc-artifact-registry/lab-15-get-customers-svc-img']
 
 - id: "Deploy Cloud Run Service"
   name: 'gcr.io/cloud-builders/gcloud:latest'
@@ -18,7 +18,7 @@ steps:
     '--allow-unauthenticated',
     '--memory', '256Mi',
     '--platform', 'managed',
-    '--image', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-monkey-artifact-registry/lab-15-get-customers-svc-img',
+    '--image', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-run-poc-artifact-registry/lab-15-get-customers-svc-img',
     '--timeout', '30',
     '--min-instances', '0',
     '--max-instances', '1',
