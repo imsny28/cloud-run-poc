@@ -24,7 +24,7 @@ spec:
       timeoutSeconds: 5
       serviceAccountName: sa-customers-svc@PLACEHOLDER_PROJECT_ID.iam.gserviceaccount.com
       containers:
-      - image: us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-monkey-artifact-registry/lab-23-get-customers-svc-img:latest
+      - image: us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-run-poc-artifact-registry/lab-23-get-customers-svc-img:latest
         name: get-cutomers-svc
         ports:
         - name: http1

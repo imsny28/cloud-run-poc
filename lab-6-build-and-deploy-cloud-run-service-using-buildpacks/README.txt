@@ -23,7 +23,7 @@ Repository: udemy-cloud-monkey-cloud-run-code-repo
 Branch: main
 Configuration: Buildpacks
 Build Directory: lab-6-build-and-deploy-cloud-run-service-using-buildpacks/microservices/customers
-Image Name: us-central1-docker.pkg.dev/$PROJECT_ID/cloud-monkey-artifact-registry/lab-06-get-customers-svc-img:latest
+Image Name: us-central1-docker.pkg.dev/$PROJECT_ID/cloud-run-poc-artifact-registry/lab-06-get-customers-svc-img:latest
 Builder Image: gcr.io/buildpacks/builder
 
 Invoke Build Trigger from UI

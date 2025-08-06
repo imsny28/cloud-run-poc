@@ -83,8 +83,8 @@ Look for trigger named lab-21-get-customers-svc-deploy-tr and click Run
 Verify
 ------
 gcloud auth configure-docker us-central1-docker.pkg.dev
-docker build -t us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-monkey-artifact-registry/lab-21-get-customers-svc-img ./lab-21-securing-containers-cloudbuild-attestor/microservices/customers/
-docker push --all-tags us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-monkey-artifact-registry/lab-21-get-customers-svc-img
+docker build -t us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-run-poc-artifact-registry/lab-21-get-customers-svc-img ./lab-21-securing-containers-cloudbuild-attestor/microservices/customers/
+docker push --all-tags us-central1-docker.pkg.dev/PLACEHOLDER_PROJECT_ID/cloud-run-poc-artifact-registry/lab-21-get-customers-svc-img
 
 Redeploy the service
 --------------------
